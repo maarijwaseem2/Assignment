@@ -35,23 +35,37 @@
   border-radius: 8px;
   border: 1px solid var(--border-color);
 }
-
+.search-bar .title{
+  font-family: "Neue" Haas Grotesk Display Pro;
+  font-size: 14px;
+  font-weight: 500;
+  color: #585D6E;
+}
 .search-bar input {
   flex: 1;
   padding: 0.75rem;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 14px;
+}
+.search-bar option{
+  font-family: "Neue" Haas Grotesk Display Pro;
+  font-size: 14px;
+  font-weight: 500;
+  color: #585D6E;
 }
 
 .search-button {
   background: var(--primary-color);
   color: white;
   border: none;
-  border-radius: 4px;
-  padding: 0 1.5rem;
+  max-width: 140px;
+  border-radius: 8px;
+  padding: 10px 20px ;
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
   gap: 0.5rem;
   cursor: pointer;
 }
@@ -92,16 +106,18 @@
 }
 
 .section-header h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: "Neue" Haas Grotesk Display Pro;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
   margin: 0;
 }
 
 .see-all-link {
+  font-family: "Neue" Haas Grotesk Display Pro;
   color: var(--primary-color);
-  /* text-decoration: none; */
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .job-grid {
@@ -115,6 +131,11 @@
     flex-direction: column;
   }
   .job-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 } 
+@media (max-width: 500px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+}

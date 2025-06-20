@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import { Search } from "lucide-react";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="navbar">
       <div className="navbar-left">
@@ -36,20 +38,18 @@ export default function Navbar() {
         </svg>
 
         <div className="logo">Find Job</div>
-        <nav className="nav-links">
+        <button className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="#">Top Companies</a>
-          <a href="#" className="icon-link">
-            Documents
-          </a>
-          <a href="#" className="icon-link">
-            My Calendar
-          </a>
-          <a href="#" className="icon-link">
-            Messages
-          </a>
-          <a href="#" className="icon-link">
-            Notifications
-          </a>
+          <a href="#" className="icon-link">Documents</a>
+          <a href="#" className="icon-link">My Calendar</a>
+          <a href="#" className="icon-link">Messages</a>
+          <a href="#" className="icon-link">Notifications</a>
         </nav>
       </div>
 
