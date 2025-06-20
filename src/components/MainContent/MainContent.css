@@ -1,0 +1,120 @@
+.main-content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-header h1 {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #333333;
+}
+.highlight {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  color: #0154AA;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.main-header p {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  font-size: 14px;
+  font-weight: 500;
+  color: #585D6E;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1rem;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.quick-filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.quick-filters span {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  color: #737A91;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-chip {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  color: #737A91;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #737A91;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.job-section {
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 20px;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.see-all-link {
+  color: var(--primary-color);
+  /* text-decoration: none; */
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+  }
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+} 

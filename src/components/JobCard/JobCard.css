@@ -1,0 +1,129 @@
+.job-card-wrapper {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 182px;
+  height: 164px;
+}
+
+.promoted-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #232323;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.job-card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  gap: 0px;
+}
+
+.job-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.company-logo img {
+  width: 25px;
+  height: 25px;
+  background-color:#FAFAFA;
+  padding: 8px;
+  border-radius: 9px;
+}
+
+.job-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+}
+
+.company-name {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+}
+
+.job-details {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 12px;
+  color: #333333;
+}
+
+.detail-item {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #585D6E;
+  gap: 0.5rem;
+}
+
+.detail-icon {
+  font-size: 12px;
+  font-weight: 500;
+  color: #585D6E;
+  width: 16px;
+  height: 16px;
+}
+
+.applicants-link {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.job-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.9rem;
+  gap: 10px;
+}
+
+.apply-button {
+  font-family: "Neue" Haas Grotesk Display Pro;
+  background: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 30px;
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.bookmark-button {
+  background: none;
+  border: none;
+  /* border: 1px solid var(--border-color); */
+  /* border-radius: 4px; */
+  /* padding: 0.5rem; */
+  cursor: pointer;
+}
+
+.bookmark-icon {
+  font-size: 25px;
+  /* width: 16px;
+  height: 16px; */
+  color: #666;
+} 
