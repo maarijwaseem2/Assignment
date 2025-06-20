@@ -10,3 +10,23 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# Job Profile Landing Page
+
+This is a React-based responsive landing page built with Vite and styled using external CSS.
+
+## 🔗 Live Demo
+[Click here to view the site](https://symphonious-conkies-1e4fe0.netlify.app/)
+
+## 📂 Folder Structure
+- `src/components/` → Reusable components like Navbar and also include css file
+- `App.jsx` → Main layout
+
+## 🚀 Technologies Used
+- React
+- Vite
+- External CSS
+- Lucide Icons
+
+## 🧑‍💻 Author
+Syed Abdul Maarij
